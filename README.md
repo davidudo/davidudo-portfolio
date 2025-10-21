@@ -1,43 +1,38 @@
-# David Udo Portfolio Website
+# sv
 
-This is the second portfolio website I have built for myself. The website contains all the information anyone needs to know about me. The website consists the following pages: 
-- Home
-- About
-- Projects
-- Certificates
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-# Screenshot
+## Creating a project
 
-## Home Page
+If you're seeing this, you've probably already done this step. Congrats!
 
-![Home Screenshot](./assets/img/screenshots/home.png)
+```sh
+# create a new project in the current directory
+npx sv create
 
-## About Page
+# create a new project in my-app
+npx sv create my-app
+```
 
-![About Screenshot](./assets/img/screenshots/about.png)
+## Developing
 
-## Projects Page
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-![Projects Screenshot](./assets/img/screenshots/projects.png)
+```sh
+npm run dev
 
-## Certificates Page
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-![Certificates Screenshot](./assets/img/screenshots/certificates.png)
+## Building
 
-# Links
+To create a production version of your app:
 
-- Code URL: [https://github.com/davidudo/davidudo_portfolio](https://github.com/davidudo/davidudo_portfolio)
-- Live Site URL: [https://davidudo.netlify.app](https://davidudo.netlify.app/)
+```sh
+npm run build
+```
 
-# Built with
+You can preview the production build with `npm run preview`.
 
-- HTML
-- CSS
-- JavaScript
-
-# Author
-
-- LinkedIn - [David Udo](https://www.linkedin.com/in/david-udo-1713b3231)
-- Twitter - [@_davidudo](https://www.twitter.com/_davidudo)
-- Instagram - [@_davidudo](https://instagram.com/_davidudo)
-- Email - [udodavid46.ud@gmail.com](mailto:udodavid46.ud@gmail.com)
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
