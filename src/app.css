@@ -1,3 +1,109 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+/* Space Grotesk Fonts */
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk/SpaceGrotesk-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Roboto Mono Fonts */
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono/RobotoMono-Thin.woff2') format('woff2');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono/RobotoMono-ExtraLight.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono/RobotoMono-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono/RobotoMono-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono/RobotoMono-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono/RobotoMono-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono/RobotoMono-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--font-family-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+	--font-family-mono: 'Roboto Mono', ui-monospace, SFMono-Regular, monospace;
+
+	--font-primary: 'Space Grotesk', sans-serif;
+	--font-secondary: 'Roboto Mono', monospace;
+}
