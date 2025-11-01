@@ -119,4 +119,43 @@
 
 	--color-accent-200: #c9eaff;
 	--color-accent-500: #0099ff;
+
+	--size-desktop: 1920px;
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		@apply bg-primary-900 uppercase;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	button {
+		font-family: var(--font-primary);
+		font-style: normal;
+		font-display: swap;
+	}
+
+	p {
+		font-family: var(--font-secondary);
+		font-style: normal;
+		font-display: swap;
+	}
+}
+
+@layer components {
+	.icon-phone {
+		background-image: url('/icons/phone.svg');
+	}
+
+	.icon-search {
+		background-image: url('/icons/search.svg');
+	}
 }
