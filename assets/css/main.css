@@ -2,21 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #1D263B;
+  background-color: #1d263b;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
 }
 
 h2 {
@@ -41,7 +41,7 @@ span {
 }
 
 .green {
-  color: #7EB77F;
+  color: #7eb77f;
 }
 
 .bold {
@@ -52,7 +52,7 @@ span {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  color: #F08CAE;
+  color: #f08cae;
 }
 
 ul {
@@ -64,7 +64,7 @@ ul {
 }
 
 .social-link a i:hover {
-  color: #F08CAE;
+  color: #f08cae;
 }
 
 .main-container {
@@ -84,14 +84,14 @@ section {
 }
 
 section .hyperlink {
-  color: #F08CAE;
+  color: #f08cae;
   font-weight: 700;
   text-decoration: underline;
   transition: all 0.2s ease;
 }
 
 section .hyperlink:hover {
-  color: #7EB77F;
+  color: #7eb77f;
 }
 
 .section-description {

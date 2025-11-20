@@ -41,17 +41,17 @@ h5 {
   text-align: center;
   justify-content: space-between;
   border-radius: 10px 10px 0 0;
-  background-color: #7EB77F;
+  background-color: #7eb77f;
 }
 
 #terminal-title {
   font-weight: 700;
-  color: #1D263B;
+  color: #1d263b;
   letter-spacing: 0.1em;
 }
 
 .right-side-buttons i {
-  color: #1D263B;
+  color: #1d263b;
 }
 
 .right-side-buttons i:not(:last-child) {
@@ -62,12 +62,12 @@ h5 {
   padding: 20px;
   border-radius: 0 0 10px 10px;
   text-align: left;
-  border: 1px solid #7EB77F;
+  border: 1px solid #7eb77f;
 }
 
 .terminal-window div,
 .terminal-window div p {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   letter-spacing: 0.02em;
 }
 
@@ -81,7 +81,7 @@ h5 {
 
 .input::before {
   content: ">\A0";
-  color: #7EB77F;
+  color: #7eb77f;
   font-weight: 700;
 }
 
@@ -99,6 +99,10 @@ h5 {
 
 /* --- EDUCATION & EXPERIENCE --- */
 
+.education-experience {
+  max-width: 1350px;
+}
+
 .education-experience-container h3 {
   margin-bottom: 50px;
 }
@@ -107,33 +111,43 @@ h5 {
   margin-top: 50px;
 }
 
-.education-experience-card {
+.education-experience-container .education-experience-card {
   margin-top: 25px;
 }
 
-.card-info p {
+.education-experience-container .card-info p,
+.education-experience-container .card-info-full p {
   margin-top: 0.35em;
 }
 
-.card-info p a:hover {
-  color: #F08CAE;
+.education-experience-container .card-info p a:hover {
+  color: #f08cae;
 }
 
-.card-description {
-  margin: 15px 0 0 15px;
+.education-experience-container .card-description {
+  list-style-position: outside;
 }
 
-.card-description p:not(:first-child) {
-  margin-top: 0.35em;
+.education-experience-container .card-description ul li {
+  display: list-item;
+  list-style-type: none;
+  margin-left: 1em;
+  position: relative;
 }
 
-.card-description p::before {
-  content: ">\A0";
-  color: #7EB77F;
+.education-experience-container .card-description ul li:not(:first-child) {
+  margin-top: 0.8em;
+}
+
+.education-experience-container .card-description ul li::before {
+  content: ">";
+  color: #7eb77f;
   font-weight: 700;
+  position: absolute;
+  left: -1em;
 }
 
-.card-description h5:not(:first-child) {
+.education-experience-container .card-description h5:not(:first-child) {
   margin-top: 10px;
 }
 
@@ -149,10 +163,15 @@ h5 {
   align-items: center;
 }
 
+#tech-stack h3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .skill {
   border-radius: 12px;
   margin: 10px;
-  border: 2px solid #7EB77F;
+  border: 2px solid #7eb77f;
   padding: 8px 10px;
   display: flex;
   align-items: center;
@@ -169,6 +188,11 @@ h5 {
 }
 
 /* --- ALL SOCIAL MEDIA --- */
+
+#all-social-media h3 {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .social-media-list {
   margin: 50px auto 0 auto;
@@ -187,7 +211,7 @@ h5 {
 }
 
 .social-media-item:hover {
-  color: #F08CAE;
+  color: #f08cae;
 }
 
 .social-media-item i {
@@ -241,13 +265,18 @@ h5 {
   .education-experience-card {
     display: flex;
     justify-content: space-between;
+    gap: 0.5rem;
   }
 
-  .card-info {
+  .education-experience-container .card-info {
     width: 40%;
   }
 
-  .card-description {
+  .education-experience-container .card-info-full {
+    width: 100%;
+  }
+
+  .education-experience-container .card-description {
     width: 60%;
     margin-top: 0;
   }

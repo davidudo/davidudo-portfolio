@@ -13,7 +13,7 @@ em {
   height: -moz-fit-content;
 }
 
-.card {
+.project-cards-container .card {
   display: flex;
   flex-direction: column;
   color: #1d263b;
@@ -21,14 +21,14 @@ em {
   margin-bottom: 1.5rem;
 }
 
-.card-preview-img {
+.project-cards-container .card-preview-img {
   max-width: 100%;
   border-radius: 10px 10px 0 0;
   padding: 5px;
   background-color: white;
 }
 
-.card-info {
+.project-cards-container .card-info {
   padding: 25px;
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
