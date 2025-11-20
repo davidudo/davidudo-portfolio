@@ -31,6 +31,8 @@ header {
   flex-direction: column;
   align-items: center;
   left: 0;
+  right: 0;
+  top: 4.3rem;
 }
 
 .nav-item {
@@ -42,7 +44,7 @@ header {
   display: block;
   padding: 20px;
   font-weight: 700;
-  width: 100vw;
+  width: 100%;
   letter-spacing: 0.1em;
   transition: all 0.2s ease;
   color: #1d263b;
@@ -63,11 +65,11 @@ header {
 }
 
 .toggle {
-  padding: 1.1em;
+  padding: 0;
 }
 
 .toggle i {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -85,6 +87,7 @@ header {
     background-color: #1d263b;
     height: fit-content;
     height: -moz-fit-content;
+    top: 0;
   }
 
   .nav-item {
