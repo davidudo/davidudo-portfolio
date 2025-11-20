@@ -11,6 +11,8 @@
    align-items: center;
    justify-content: space-between;
    min-height: 100vh;
+   max-width: 1350px;
+   padding-top: 15vh;
  }
 
  .landing-page-details {
@@ -38,9 +40,10 @@
    font-weight: 700;
    margin-bottom: 0.5em;
  }
- 
+
  .medium-title {
-   font-size: 1.5em
+   font-size: 1.5em;
+   margin: 0;
  }
 
  .big-title {
@@ -147,11 +150,11 @@
    .big-title {
      font-size: 3.5em;
    }
-   
+
    .medium-title {
      font-size: 2em;
    }
-   
+
    .small-title {
      font-size: 1.5em;
    }
