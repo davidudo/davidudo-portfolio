@@ -1,6 +1,6 @@
 # David Udo Portfolio Website
 
-This is the second portfolio website I have built for myself. The website contains all the information anyone needs to know about me. The website consists the following pages: 
+This is the second portfolio website I have built for myself. The website contains all the information anyone needs to know about me. The website consists the following pages:
 - Home
 - About
 - Projects
@@ -40,4 +40,4 @@ This is the second portfolio website I have built for myself. The website contai
 - LinkedIn - [David Udo](https://www.linkedin.com/in/david-udo-1713b3231)
 - Twitter - [@_davidudo](https://www.twitter.com/_davidudo)
 - Instagram - [@_davidudo](https://instagram.com/_davidudo)
-- Email - [udodavid46.ud@gmail.com](mailto:udodavid46.ud@gmail.com)
+- Email - [dave.etim.udo@gmail.com](mailto:dave.etim.udo@gmail.com)
