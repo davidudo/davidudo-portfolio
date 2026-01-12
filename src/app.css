@@ -1,3 +1,14 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--font-anton: 'Anton', sans-serif;
+	--font-francois: 'Francois One', sans-serif;
+	--font-instrument: 'Instrument Sans', sans-serif;
+	--font-instrument-serif: 'Instrument Serif', serif;
+}
+
+body {
+	font-family: var(--font-instrument);
+}
