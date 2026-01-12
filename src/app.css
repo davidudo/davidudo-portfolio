@@ -1,14 +1,44 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+@import 'lenis/dist/lenis.css';
 
 @theme {
 	--font-anton: 'Anton', sans-serif;
 	--font-francois: 'Francois One', sans-serif;
 	--font-instrument: 'Instrument Sans', sans-serif;
 	--font-instrument-serif: 'Instrument Serif', serif;
+
+	--color-brand-red: #ff2a2a;
+	--color-brand-pink: #ffe5e0;
+}
+
+html {
+	overflow-x: hidden;
 }
 
 body {
 	font-family: var(--font-instrument);
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ffe5e0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ff2a2a;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #cc0000;
+}
+
+html {
+	scrollbar-width: thin;
+	scrollbar-color: #ff2a2a #ffe5e0;
 }
