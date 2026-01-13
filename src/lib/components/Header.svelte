@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+
 	let isMenuOpen = $state(false);
 
 	const MENU_ITEMS = ['ABOUT', 'WORKS', 'CONTACT'];
@@ -13,6 +15,8 @@
 	function toggleMenu() {
 		isMenuOpen = !isMenuOpen;
 	}
+
+	let isContactPage = $derived($page.url.pathname === '/contact');
 </script>
 
 <!-- Menu Overlay -->
@@ -58,8 +62,8 @@
 
 <div
 	class="pointer-events-none fixed top-0 left-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-colors duration-300 md:px-8 md:py-8"
-	class:text-white={isMenuOpen}
-	class:text-brand-red={!isMenuOpen}
+	class:text-white={isMenuOpen || isContactPage}
+	class:text-brand-red={!isMenuOpen && !isContactPage}
 >
 	<a
 		href="/"
