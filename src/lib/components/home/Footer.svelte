@@ -32,7 +32,7 @@
 
 		<a
 			href="mailto:hello@davidu.do"
-			class="group absolute top-1/2 left-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-full border border-brand-red bg-brand-pink text-center font-francois text-sm font-bold text-brand-red uppercase transition-transform duration-300 md:h-48 md:w-48 md:text-base"
+			class="group absolute top-1/2 left-1/2 flex h-26 w-26 -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-full border border-brand-red bg-brand-pink text-center font-francois text-sm font-bold text-brand-red uppercase transition-transform duration-300 md:h-48 md:w-48 md:text-base"
 		>
 			<span
 				class="absolute inset-0 z-0 scale-50 rounded-full bg-brand-red opacity-0 transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100"

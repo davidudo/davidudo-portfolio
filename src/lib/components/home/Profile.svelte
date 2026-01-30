@@ -8,7 +8,7 @@
 	<div
 		class="mb-4 flex flex-col items-center gap-1 font-francois text-[10px] font-medium uppercase md:text-xs"
 	>
-		<span class="font-instrument-serif font-semibold tracking-wider">FULL STACK ENGINEER</span>
+		<span class="font-instrument-serif font-semibold tracking-wider">FULLSTACK ENGINEER</span>
 		<span>DAVID UDO IS A SOFTWARE ENGINEER WHO BRIDGES</span>
 		<span>THE GAP BETWEEN DESIGN AND TECHNOLOGY</span>
 	</div>
