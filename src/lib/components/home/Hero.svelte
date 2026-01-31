@@ -26,9 +26,7 @@
 			class="absolute inset-0 z-10 flex items-center justify-center bg-brand-pink text-brand-red"
 			style="clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); transform: translateY(-{translateAmount}%);"
 		>
-			<h1
-				class="flex flex-col items-center font-anton text-[20vw] leading-none font-bold uppercase"
-			>
+			<h1 class="flex flex-col items-center font-anton text-[20vw] leading-none uppercase">
 				DAVID UDO
 			</h1>
 		</div>
@@ -38,9 +36,7 @@
 			class="absolute inset-0 z-10 flex items-center justify-center bg-brand-pink text-brand-red"
 			style="clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); transform: translateY({translateAmount}%);"
 		>
-			<h1
-				class="flex flex-col items-center font-anton text-[20vw] leading-none font-bold uppercase"
-			>
+			<h1 class="flex flex-col items-center font-anton text-[20vw] leading-none uppercase">
 				DAVID UDO
 			</h1>
 

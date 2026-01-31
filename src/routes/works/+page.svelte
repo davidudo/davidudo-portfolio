@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Hero from '$lib/components/works/Hero.svelte';
 	import ProjectList from '$lib/components/works/ProjectList.svelte';
-	import Footer from '$lib/components/works/Footer.svelte';
+	import Footer from '$lib/components/general/Footer.svelte';
 </script>
 
 <svelte:head>

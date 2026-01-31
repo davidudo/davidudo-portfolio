@@ -15,7 +15,7 @@
 
 	<!-- Main Title -->
 	<h2
-		class="mt-10 mb-12 font-anton text-[16vw] leading-[0.85] font-bold whitespace-nowrap uppercase select-none"
+		class="mt-10 mb-12 font-anton text-[16vw] leading-[0.85] whitespace-nowrap uppercase select-none"
 	>
 		DAVID UDO
 	</h2>

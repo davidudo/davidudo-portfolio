@@ -3,7 +3,7 @@
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Lenis from 'lenis';
-	import Header from '$lib/components/Header.svelte';
+	import Header from '$lib/components/general/Header.svelte';
 
 	let { children } = $props();
 

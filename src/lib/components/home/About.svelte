@@ -24,7 +24,7 @@
 			>
 				{#each Array(4) as _}
 					<div class="flex">
-						<span class="font-anton text-[25vw] font-bold uppercase">
+						<span class="font-anton text-[25vw] uppercase">
 							DAVID UDO&nbsp;&bull;&nbsp;SOFTWARE ENGINEER&nbsp;&bull;&nbsp;
 						</span>
 					</div>
