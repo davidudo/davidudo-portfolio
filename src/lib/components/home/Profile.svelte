@@ -2,7 +2,7 @@
 </script>
 
 <section
-	class="flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-brand-pink px-4 py-20 text-center text-brand-red md:px-8"
+	class="flex min-h-dvh w-full flex-col items-center justify-center overflow-hidden bg-brand-pink px-4 py-20 text-center text-brand-red md:px-8"
 >
 	<!-- Top Tagline -->
 	<div

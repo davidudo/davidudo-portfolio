@@ -8,7 +8,7 @@
 	<title>Works | David Udo</title>
 </svelte:head>
 
-<main class="min-h-screen w-full bg-brand-pink font-instrument text-brand-red">
+<main class="min-h-dvh w-full bg-brand-pink font-instrument text-brand-red">
 	<Hero />
 	<ProjectList />
 	<Footer />

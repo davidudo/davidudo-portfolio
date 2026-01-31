@@ -2,15 +2,15 @@
 	import signature from '$lib/assets/about/signature.svg';
 </script>
 
-<section class="relative w-full bg-brand-pink px-8 py-20 text-brand-red md:min-h-screen md:py-32">
+<section class="relative w-full bg-brand-pink px-8 py-20 text-brand-red md:min-h-dvh md:py-32">
 	<div class="mx-auto flex max-w-6xl flex-col items-center text-center">
 		<!-- Main Title -->
 		<div class="mb-12 flex flex-col items-center">
 			<div>
-				<h1 class="font-anton text-[clamp(4rem,15vw,10rem)] leading-[0.9] text-brand-red uppercase">
+				<h1 class="font-anton text-[clamp(1rem,15vw,10rem)] leading-[0.9] text-brand-red uppercase">
 					SOFTWARE
 				</h1>
-				<h1 class="font-anton text-[clamp(4rem,15vw,10rem)] leading-[0.9] text-brand-red uppercase">
+				<h1 class="font-anton text-[clamp(1rem,15vw,10rem)] leading-[0.9] text-brand-red uppercase">
 					ENGINEER
 				</h1>
 			</div>

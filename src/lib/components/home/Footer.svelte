@@ -8,7 +8,7 @@
 </script>
 
 <footer
-	class="relative flex min-h-screen w-full flex-col items-center justify-between overflow-hidden bg-brand-red px-4 py-20 text-center text-brand-pink md:px-8"
+	class="relative flex min-h-dvh w-full flex-col items-center justify-between overflow-hidden bg-brand-red px-4 py-20 text-center text-brand-pink md:px-8"
 >
 	<!-- Top Tagline -->
 	<div

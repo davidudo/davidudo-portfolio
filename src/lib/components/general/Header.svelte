@@ -26,7 +26,7 @@
 	class:-translate-y-full={!isMenuOpen}
 >
 	<div class="flex flex-col items-center justify-center gap-[10vh]">
-		<nav class="flex flex-col items-center gap-2 text-center">
+		<nav class="flex flex-col items-center gap-6 text-center md:gap-2">
 			{#each MENU_ITEMS as item}
 				<a
 					href="/{item.toLowerCase()}"
@@ -68,6 +68,7 @@
 	<a
 		href="/"
 		class="pointer-events-auto font-instrument text-base font-bold tracking-widest transition-opacity"
+		onclick={() => (isMenuOpen = false)}
 	>
 		D — U
 	</a>
