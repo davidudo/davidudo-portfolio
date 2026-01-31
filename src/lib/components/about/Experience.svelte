@@ -86,9 +86,7 @@
 						</div>
 
 						<!-- Description -->
-						<p
-							class="mt-2 max-w-md font-instrument text-[10px] leading-relaxed tracking-widest uppercase md:text-xs"
-						>
+						<p class="mt-2 max-w-md font-instrument text-xs opacity-90 md:text-sm">
 							{exp.description}
 						</p>
 					</div>

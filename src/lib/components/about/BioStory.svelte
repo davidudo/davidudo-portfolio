@@ -12,7 +12,7 @@
 				problem-solving, and creating experiences that resonate.
 			</h2>
 
-			<p class="max-w-lg font-instrument text-base opacity-90">
+			<p class="max-w-lg font-instrument text-base font-medium opacity-90">
 				Throughout my successful career, I have had the pleasure of working with a diverse range of
 				clients and industries. My unwavering objective has always been to design and develop
 				interfaces that are unparalleled in their uniqueness, aesthetic appeal, and ease of use.

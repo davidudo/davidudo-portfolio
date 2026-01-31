@@ -6,13 +6,13 @@
 		tags,
 		image,
 		hoverImage = '',
-		className = ''
+		slug
 	} = $props<{
 		title: string;
 		tags: string;
 		image: string;
 		hoverImage?: string;
-		className?: string;
+		slug: string;
 	}>();
 
 	let containerRef: HTMLDivElement;
@@ -39,7 +39,7 @@
 	});
 </script>
 
-<div class="flex flex-col gap-3 {className}">
+<a href="/works/{slug}" class="flex flex-col gap-3 transition-opacity md:hover:opacity-90">
 	<div
 		bind:this={containerRef}
 		class="group relative aspect-4/3 w-full overflow-hidden md:hover:cursor-pointer"
@@ -70,4 +70,4 @@
 		<span class="h-1 w-1 rounded-full bg-brand-red"></span>
 		<span>{tags}</span>
 	</div>
-</div>
+</a>

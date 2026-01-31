@@ -10,7 +10,7 @@
 	--font-instrument-serif: 'Instrument Serif', serif;
 
 	--color-brand-red: #ff2a2a;
-	--color-brand-pink: #ffe5e0;
+	--color-brand-pink: #ffefed;
 }
 
 html {
@@ -26,7 +26,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-	background: #ffe5e0;
+	background: #ffefed;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -40,5 +40,5 @@ body {
 
 html {
 	scrollbar-width: thin;
-	scrollbar-color: #ff2a2a #ffe5e0;
+	scrollbar-color: #ff2a2a #ffefed;
 }
