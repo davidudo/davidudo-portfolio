@@ -1,9 +1,10 @@
 <script lang="ts">
 	const SOCIAL_LINKS = [
-		{ name: 'GITHUB', url: 'https://github.com' },
-		{ name: 'LINKEDIN', url: 'https://linkedin.com' },
-		{ name: 'X', url: 'https://x.com' },
-		{ name: 'FACEBOOK', url: 'https://facebook.com' }
+		{ name: 'GITHUB', url: 'https://github.com/davidudo' },
+		{ name: 'LINKEDIN', url: 'https://linkedin.com/in/davidudo' },
+		{ name: 'X', url: 'https://x.com/_davidudo' },
+		{ name: 'INSTAGRAM', url: 'https://instagram.com/_davidudo' },
+		{ name: 'FACEBOOK', url: 'https://www.facebook.com/davidudo46' }
 	];
 </script>
 
@@ -14,7 +15,7 @@
 	<div
 		class="mb-20 flex flex-col items-center gap-1 font-francois text-[10px] font-medium uppercase md:text-xs"
 	>
-		<span class="font-instrument-serif font-semibold tracking-wider">FULL STACK ENGINEER</span>
+		<span class="font-instrument-serif font-semibold tracking-wider">SOFTWARE ENGINEER</span>
 		<span
 			>DAVID UDO IS A SOFTWARE ENGINEER WHO CRAFTS ROBUST DIGITAL EXPERIENCES THROUGH INNOVATIVE
 			CODE</span
@@ -31,7 +32,7 @@
 		</h2>
 
 		<a
-			href="mailto:hello@davidu.do"
+			href="mailto:dave.etim.udo@gmail.com"
 			class="group absolute top-1/2 left-1/2 flex h-26 w-26 -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-full border border-brand-red bg-brand-pink text-center font-francois text-sm font-bold text-brand-red uppercase transition-transform duration-300 md:h-48 md:w-48 md:text-base"
 		>
 			<span
@@ -53,9 +54,15 @@
 				href={link.url}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="transition-opacity hover:opacity-70"
+				class="group relative flex h-3.5 flex-col overflow-hidden"
 			>
-				{link.name}
+				<span class="transition-transform duration-300 group-hover:-translate-y-full"
+					>{link.name}</span
+				>
+				<span
+					class="absolute top-full left-0 w-full transition-transform duration-300 group-hover:-translate-y-full"
+					>{link.name}</span
+				>
 			</a>
 		{/each}
 	</div>

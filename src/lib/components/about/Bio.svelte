@@ -1,5 +1,4 @@
 <script>
-	import signature from '$lib/assets/about/signature.svg';
 </script>
 
 <section class="relative w-full bg-brand-pink px-8 py-20 text-brand-red md:min-h-dvh md:py-32">
@@ -24,19 +23,14 @@
 		<!-- Biography -->
 		<div class="mt-4 max-w-xl">
 			<p class="font-instrument-serif text-[clamp(1.2rem,4vw,2.5rem)] leading-[1.1] tracking-tight">
-				David Udo is a visionary designer with a passion for exploring the intersections of art and
-				technology.
+				David Udo is a Software Engineer with 4+ years of experience architecting and delivering
+				robust solutions for web, mobile, and desktop.
 			</p>
 		</div>
 
 		<!-- Signature -->
-		<div class="mt-12 w-46 md:mt-16">
-			<img
-				src={signature}
-				alt="David Udo Signature"
-				class="w-full text-brand-red brightness-0 hue-rotate-180 invert-0 saturate-[100] sepia-0"
-				style="filter: brightness(0) saturate(100%) invert(29%) sepia(87%) saturate(5833%) hue-rotate(352deg) brightness(101%) contrast(106%);"
-			/>
+		<div class="mt-12 md:mt-16">
+			<span class="font-signature text-2xl md:text-4xl">David Udo</span>
 		</div>
 	</div>
 </section>

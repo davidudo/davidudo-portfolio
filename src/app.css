@@ -1,4 +1,12 @@
 @import 'tailwindcss';
+
+@font-face {
+	font-family: 'Amsterdam Two';
+	src: url('$lib/assets/fonts/amsterdam-two.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 @import 'lenis/dist/lenis.css';
@@ -8,6 +16,7 @@
 	--font-francois: 'Francois One', sans-serif;
 	--font-instrument: 'Instrument Sans', sans-serif;
 	--font-instrument-serif: 'Instrument Serif', serif;
+	--font-signature: 'Amsterdam Two', cursive;
 
 	--color-brand-red: #ff2a2a;
 	--color-brand-pink: #ffefed;
@@ -19,6 +28,7 @@ html {
 
 body {
 	font-family: var(--font-instrument);
+	background-color: var(--color-brand-pink);
 }
 
 ::-webkit-scrollbar {
@@ -26,19 +36,19 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-	background: #ffefed;
+	background: var(--color-brand-pink);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #ff2a2a;
+	background: var(--color-brand-red);
 	border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #cc0000;
+	background: var(--color-brand-red);
 }
 
 html {
 	scrollbar-width: thin;
-	scrollbar-color: #ff2a2a #ffefed;
+	scrollbar-color: var(--color-brand-red) var(--color-brand-pink);
 }

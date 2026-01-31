@@ -1,34 +1,8 @@
 <script lang="ts">
 	import ProjectCard from '$lib/components/works/ProjectCard.svelte';
-	import project01a from '$lib/assets/works/project-01-a.avif';
-	import project01b from '$lib/assets/works/project-01-b.svg';
+	import { PROJECTS } from '$lib/data/works';
 
-	const PROJECTS = [
-		{
-			title: 'AURA',
-			tags: 'BRANDING, UX',
-			image: project01a,
-			hoverImage: project01b
-		},
-		{
-			title: 'AURA',
-			tags: 'BRANDING, UX',
-			image: project01a,
-			hoverImage: project01b
-		},
-		{
-			title: 'AURA',
-			tags: 'BRANDING, UX',
-			image: project01a,
-			hoverImage: project01b
-		},
-		{
-			title: 'AURA',
-			tags: 'BRANDING, UX',
-			image: project01a,
-			hoverImage: project01b
-		}
-	];
+	const displayedProjects = PROJECTS.slice(0, 4);
 </script>
 
 <section class="bg-brand-pink px-4 pt-20 text-brand-red md:px-8 md:pt-32">
@@ -43,12 +17,13 @@
 
 		<!-- Projects Grid -->
 		<div class="grid grid-cols-1 gap-x-2 gap-y-8 md:grid-cols-2 md:gap-x-4 md:gap-y-6">
-			{#each PROJECTS as project}
+			{#each displayedProjects as project}
 				<ProjectCard
 					title={project.title}
-					tags={project.tags}
+					tags={project.tags.join(', ')}
 					image={project.image}
 					hoverImage={project.hoverImage}
+					slug={project.slug}
 				/>
 			{/each}
 		</div>

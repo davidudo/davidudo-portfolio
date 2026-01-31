@@ -8,9 +8,9 @@
 	<div
 		class="mb-4 flex flex-col items-center gap-1 font-francois text-[10px] font-medium uppercase md:text-xs"
 	>
-		<span class="font-instrument-serif font-semibold tracking-wider">FULLSTACK ENGINEER</span>
-		<span>DAVID UDO IS A SOFTWARE ENGINEER WHO BRIDGES</span>
-		<span>THE GAP BETWEEN DESIGN AND TECHNOLOGY</span>
+		<span class="font-instrument-serif font-semibold tracking-wider">SOFTWARE ENGINEER</span>
+		<span>DAVID UDO IS A SOFTWARE ENGINEER WHO ARCHITECTS</span>
+		<span>AND DELIVERS ROBUST SOLUTIONS ACROSS VARIOUS PLATFORMS</span>
 	</div>
 
 	<!-- Main Title -->
@@ -22,8 +22,8 @@
 
 	<!-- Bio -->
 	<div class="max-w-4xl font-instrument-serif text-2xl leading-tight md:text-4xl">
-		David Udo is a software engineer with a passion for building scalable web applications. Outside
-		the terminal, he finds joy in hiking, experimenting with digital art, and diving into the world
-		of sci-fi literature.
+		Proven expertise in leading projects from concept to launch, optimizing performance, and
+		improving development workflows. Adept at leveraging a diverse tech stack to solve complex
+		problems and deliver measurable business value.
 	</div>
 </section>

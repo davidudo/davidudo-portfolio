@@ -1,11 +1,13 @@
 <script lang="ts">
-	const socialLinks = [
-		{ name: 'INSTAGRAM', href: 'https://instagram.com' },
-		{ name: 'BEHANCE', href: 'https://behance.net' },
-		{ name: 'LINKEDIN', href: 'https://linkedin.com' }
+	const SOCIAL_LINKS = [
+		{ name: 'GITHUB', url: 'https://github.com/davidudo' },
+		{ name: 'LINKEDIN', url: 'https://linkedin.com/in/davidudo' },
+		{ name: 'X', url: 'https://x.com/_davidudo' },
+		{ name: 'INSTAGRAM', url: 'https://instagram.com/_davidudo' },
+		{ name: 'FACEBOOK', url: 'https://www.facebook.com/davidudo46' }
 	];
 
-	const email = 'CONTACT@DAVIDUDO.COM';
+	const email = 'DAVE.ETIM.UDO@GMAIL.COM';
 </script>
 
 <footer class="relative bg-brand-pink px-4 pt-24 pb-8 md:px-8 md:pt-32">
@@ -13,9 +15,9 @@
 	<div
 		class="mx-auto mb-16 grid max-w-7xl grid-cols-2 gap-4 md:mb-24 md:flex md:items-center md:justify-between"
 	>
-		{#each socialLinks as link}
+		{#each SOCIAL_LINKS as link}
 			<a
-				href={link.href}
+				href={link.url}
 				target="_blank"
 				rel="noopener noreferrer"
 				class="group relative flex h-3.5 flex-col overflow-hidden font-francois text-[10px] text-brand-red uppercase md:text-xs"

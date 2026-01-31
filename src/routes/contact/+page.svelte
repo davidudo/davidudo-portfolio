@@ -67,22 +67,6 @@
 				</div>
 
 				<div class="flex flex-col gap-2">
-					<span class="text-xs font-medium tracking-widest text-[#8b7fb8] uppercase">INSTAGRAM</span
-					>
-					<a
-						href="https://instagram.com/_davidudo"
-						target="_blank"
-						class="group relative inline-block w-fit font-normal text-white no-underline"
-						style="font-size: clamp(1.125rem, 1.3vw, 1.5rem);"
-					>
-						@_DAVIDUDO
-						<span
-							class="absolute bottom-0 left-0 h-px w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100"
-						></span>
-					</a>
-				</div>
-
-				<div class="flex flex-col gap-2">
 					<span class="text-xs font-medium tracking-widest text-[#8b7fb8] uppercase">PHONE</span>
 					<a
 						href="tel:+2348107587015"
@@ -90,6 +74,21 @@
 						style="font-size: clamp(1.125rem, 1.3vw, 1.5rem);"
 					>
 						+234 810 758 7015
+						<span
+							class="absolute bottom-0 left-0 h-px w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100"
+						></span>
+					</a>
+				</div>
+
+				<div class="flex flex-col gap-2">
+					<span class="text-xs font-medium tracking-widest text-[#8b7fb8] uppercase">LINKEDIN</span>
+					<a
+						href="https://linkedin.com/in/davidudo"
+						target="_blank"
+						class="group relative inline-block w-fit font-normal text-white no-underline"
+						style="font-size: clamp(1.125rem, 1.3vw, 1.5rem);"
+					>
+						@DAVIDUDO
 						<span
 							class="absolute bottom-0 left-0 h-px w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100"
 						></span>

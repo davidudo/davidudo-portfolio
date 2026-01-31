@@ -1,5 +1,5 @@
 <script lang="ts">
-	import heroReveal from '$lib/assets/photos/kim.avif';
+	import heroReveal from '$lib/assets/workspace.webp';
 
 	let scrollY = $state(0);
 	let innerHeight = $state(0);
@@ -7,9 +7,9 @@
 	let translateAmount = $derived(progress * 50);
 
 	const SOCIAL_LINKS = [
-		{ name: 'GITHUB', url: 'https://github.com' },
-		{ name: 'LINKEDIN', url: 'https://linkedin.com' },
-		{ name: 'X', url: 'https://x.com' }
+		{ name: 'GITHUB', url: 'https://github.com/davidudo' },
+		{ name: 'LINKEDIN', url: 'https://linkedin.com/in/davidudo' },
+		{ name: 'X', url: 'https://x.com/_davidudo' }
 	];
 </script>
 
@@ -61,7 +61,7 @@
 
 			<div class="absolute right-8 bottom-8 flex gap-4 font-francois">
 				<a
-					href="tel:"
+					href="tel:+2348107587015"
 					class="group relative flex h-3.5 flex-col overflow-hidden text-xs text-brand-red"
 				>
 					<span class="transition-transform duration-300 group-hover:-translate-y-full">PHONE</span>
@@ -71,7 +71,7 @@
 					>
 				</a>
 				<a
-					href="mailto:"
+					href="mailto:dave.etim.udo@gmail.com"
 					class="group relative flex h-3.5 flex-col overflow-hidden text-xs text-brand-red"
 				>
 					<span class="transition-transform duration-300 group-hover:-translate-y-full"
@@ -87,7 +87,7 @@
 			<div
 				class="absolute top-1/2 left-1/2 mt-[24vw] max-w-70 -translate-x-1/2 text-center font-francois text-[10px] leading-tight font-medium tracking-widest text-brand-red md:top-auto md:bottom-8 md:mt-0 md:text-xs"
 			>
-				DAVID UDO IS A SOFTWARE ENGINEER WHO CRAFTS SCALABLE SOLUTIONS THROUGH INNOVATIVE CODE
+				DAVID UDO IS A SOFTWARE ENGINEER WITH 4+ YEARS OF EXPERIENCE ARCHITECTING ROBUST SOLUTIONS
 			</div>
 		</div>
 	</div>

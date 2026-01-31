@@ -24,8 +24,8 @@
 		<p
 			class="mx-auto max-w-[260px] font-francois text-[10px] leading-tight font-medium text-brand-red uppercase md:max-w-sm md:text-xs"
 		>
-			David Udo is a visionary designer who bridges cultures through her innovative design
-			philosophy
+			David Udo is a Software Engineer who crafts scalable solutions through innovative code and
+			architectural excellence.
 		</p>
 	</div>
 </section>

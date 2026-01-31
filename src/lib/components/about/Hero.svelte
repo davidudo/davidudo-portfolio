@@ -1,8 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
-	import photo01 from '$lib/assets/about/photo-01.png';
-	import photo02 from '$lib/assets/about/photo-02.png';
-	import photo03 from '$lib/assets/about/photo-03.png';
+	import photo01 from '$lib/assets/photos/davidudo-photo-02.webp';
+	import photo02 from '$lib/assets/photos/davidudo-photo-01.webp';
+	import photo03 from '$lib/assets/photos/davidudo-photo-02.webp';
 
 	let scrollY = $state(0);
 	let innerWidth = $state(0);

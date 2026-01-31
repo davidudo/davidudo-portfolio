@@ -11,8 +11,8 @@
 			<div class="font-francois text-xs font-medium uppercase">ABOUT DAVID UDO</div>
 
 			<div class="max-w-md font-instrument text-lg leading-tight font-medium">
-				Born in Seoul, South Korea, and now making waves in San Francisco, David Udo is a software
-				engineer who bridges the gap between design and technology.
+				David Udo is a Software Engineer with 4+ years of experience architecting and delivering
+				robust solutions for web, mobile, and desktop.
 			</div>
 		</div>
 

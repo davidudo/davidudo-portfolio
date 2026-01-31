@@ -1,5 +1,11 @@
-import project01a from '$lib/assets/works/project-01-a.avif';
-import project01b from '$lib/assets/works/project-01-b.svg';
+import project01a from '$lib/assets/works/01/project-01-a.webp';
+import project01b from '$lib/assets/works/01/project-01-b.webp';
+import project02a from '$lib/assets/works/02/project-02-a.webp';
+import project02b from '$lib/assets/works/02/project-02-b.webp';
+import project03a from '$lib/assets/works/03/project-03-a.webp';
+import project03b from '$lib/assets/works/03/project-03-b.webp';
+import project04a from '$lib/assets/works/04/project-04-a.webp';
+import project04b from '$lib/assets/works/04/project-04-b.webp';
 
 export interface Project {
 	slug: string;
@@ -19,120 +25,103 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
 	{
-		slug: 'aura',
-		title: 'AURA',
-		shortDescription: 'Confidence and radiance through skincare.',
+		slug: 'devsearch',
+		title: 'DEVSEARCH',
+		shortDescription: 'Project sharing and discovery platform for developers.',
 		description:
-			'Aura is dedicated to promoting confidence and radiance in women with innovative skincare and nutritional supplements.',
-		tags: ['Branding', 'UX'],
-		year: '2020',
+			'A full-stack platform for developers to share projects, connect, and receive feedback, featuring real-time messaging and project rating.',
+		tags: ['Django', 'Python', 'PostgreSQL', 'REST API'],
+		year: '2022',
 		image: project01a,
 		hoverImage: project01b,
-		link: 'https://example.com',
+		link: 'https://github.com/davidudo',
 		sections: [
 			{
 				items: [
 					{
 						title: 'Concept',
 						content:
-							'Aura is dedicated to promoting confidence and radiance in women with innovative skincare and nutritional supplements.'
+							'DevSearch was designed as a central hub for developers to showcase their work and find collaborators, filling the gap between simple code repos and social networks.'
 					},
 					{
-						title: 'Development',
+						title: 'Core Features',
 						content:
-							'Aura is dedicated to promoting confidence and radiance in women with innovative skincare and nutritional supplements.'
+							'Integrated a real-time messaging system, project review functionality, and a secure password reset system via email.'
 					}
 				],
-				images: [project01a, project01a]
-			},
-			{
-				items: [
-					{
-						title: 'Problem',
-						content:
-							'Development optimizes the website’s performance by optimizing code, reducing file sizes, and improving loading times. A fast-loading website enhances user experience, reduces bounce rates, and improves search engine rankings'
-					}
-				],
-				images: [project01a, project01a]
-			},
-			{
-				items: [
-					{
-						title: 'Solution',
-						content:
-							'Development optimizes the website’s performance by optimizing code, reducing file sizes, and improving loading times. A fast-loading website enhances user experience, reduces bounce rates, and improves search engine rankings'
-					}
-				],
-				images: [project01a]
+				images: [project01a, project01b]
 			}
 		]
 	},
 	{
-		slug: 'aura-2',
-		title: 'AURA',
-		shortDescription: 'Confidence and radiance through skincare.',
+		slug: 'study-buddy',
+		title: 'STUDY BUDDY',
+		shortDescription: 'A dynamic social learning web application.',
 		description:
-			'Aura is dedicated to promoting confidence and radiance in women with innovative skincare and nutritional supplements.',
-		tags: ['Branding', 'UX'],
-		year: '2020',
-		image: project01a,
-		hoverImage: project01b,
-		link: 'https://example.com',
+			'An interactive platform enabling users to create and participate in topic-specific discussion rooms for collaborative learning.',
+		tags: ['Django', 'Python', 'CRUD', 'Auth'],
+		year: '2022',
+		image: project02a,
+		hoverImage: project02b,
+		link: 'https://github.com/davidudo',
 		sections: [
 			{
 				items: [
 					{
-						title: 'Concept',
-						content: 'Placeholder Concept for Aura 2.'
+						title: 'Dynamic Rooms',
+						content:
+							'Implemented real-time search with sorting and pagination, significantly improving content discoverability across discussion rooms.'
 					}
 				],
-				images: [project01a]
+				images: [project02a, project02b]
 			}
 		]
 	},
 	{
-		slug: 'aura-3',
-		title: 'AURA',
-		shortDescription: 'Confidence and radiance through skincare.',
+		slug: 'jobify-web',
+		title: 'JOBIFY WEB',
+		shortDescription: 'Full-stack job posting and tracking application.',
 		description:
-			'Aura is dedicated to promoting confidence and radiance in women with innovative skincare and nutritional supplements.',
-		tags: ['Branding', 'UX'],
-		year: '2020',
-		image: project01a,
-		hoverImage: project01b,
-		link: 'https://example.com',
+			'Architected and built a comprehensive job board with custom authentication and full CRUD operations for job listings.',
+		tags: ['Node.js', 'Express', 'React', 'MongoDB'],
+		year: '2022',
+		image: project03a,
+		hoverImage: project03b,
+		link: 'https://github.com/davidudo',
 		sections: [
 			{
 				items: [
 					{
-						title: 'Concept',
-						content: 'Placeholder Concept for Aura 3.'
+						title: 'Architecture',
+						content:
+							'Developed a decoupled architecture with a React frontend and a robust Node/Express backend, secured by a custom JWT-based Auth system.'
 					}
 				],
-				images: [project01a]
+				images: [project03a, project03b]
 			}
 		]
 	},
 	{
-		slug: 'aura-4',
-		title: 'AURA',
-		shortDescription: 'Confidence and radiance through skincare.',
+		slug: 'aide-delivery-robot',
+		title: 'AIDE ROBOT',
+		shortDescription: 'Autonomous delivery robot with remote monitoring.',
 		description:
-			'Aura is dedicated to promoting confidence and radiance in women with innovative skincare and nutritional supplements.',
-		tags: ['Branding', 'UX'],
-		year: '2020',
-		image: project01a,
-		hoverImage: project01b,
-		link: 'https://example.com',
+			'A software and hardware prototype enabling real-time control and monitoring of an autonomous delivery robot.',
+		tags: ['C', 'Blender', 'SolidWorks', 'Web Interface'],
+		year: '2023',
+		image: project04a,
+		hoverImage: project04b,
+		link: 'https://github.com/davidudo',
 		sections: [
 			{
 				items: [
 					{
-						title: 'Concept',
-						content: 'Placeholder Concept for Aura 4.'
+						title: 'Monitoring Interface',
+						content:
+							'Built a responsive web interface to allow operators to track the robot’s status and control its movements in real-time.'
 					}
 				],
-				images: [project01a]
+				images: [project04a, project04b]
 			}
 		]
 	}

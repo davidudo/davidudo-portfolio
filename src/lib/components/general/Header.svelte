@@ -6,10 +6,11 @@
 	const MENU_ITEMS = ['ABOUT', 'WORKS', 'CONTACT'];
 
 	const SOCIAL_LINKS = [
-		{ name: 'Github', url: 'https://github.com' },
-		{ name: 'Linkedin', url: 'https://linkedin.com' },
-		{ name: 'X', url: 'https://x.com' },
-		{ name: 'Facebook', url: 'https://facebook.com' }
+		{ name: 'GITHUB', url: 'https://github.com/davidudo' },
+		{ name: 'LINKEDIN', url: 'https://linkedin.com/in/davidudo' },
+		{ name: 'X', url: 'https://x.com/_davidudo' },
+		{ name: 'INSTAGRAM', url: 'https://instagram.com/_davidudo' },
+		{ name: 'FACEBOOK', url: 'https://www.facebook.com/davidudo46' }
 	];
 
 	function toggleMenu() {

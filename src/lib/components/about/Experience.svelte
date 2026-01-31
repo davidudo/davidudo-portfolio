@@ -1,49 +1,57 @@
 <script>
 	const skills = [
-		'Innovative Design Thinking',
-		'Branding & Identity',
-		'Illustration & Graphics',
-		'UI/UX Design',
-		'Motion Graphics'
+		'Languages: JavaScript, TypeScript, Python, Elixir, Clojure, Dart, Go, SQL, NoSQL',
+		'Frontend: React, Vue, Svelte, Next.js, Nuxt.js, Phoenix, HTML5, CSS3, Flutter, React Native',
+		'Backend: Node.js, NestJS, Express.js, Django, Phoenix, Gin',
+		'Databases & Cloud: PostgreSQL, MySQL, MongoDB, AWS, GCP, Azure, Docker, Kubernetes',
+		'Tools & DevOps: Git, GitHub Actions, CI/CD, Figma, WordPress, Shopify, Webflow'
 	];
 
 	const workExperience = [
 		{
-			company: 'Clavmen Studio',
-			role: 'Senior UX Designer',
-			period: '2022 — Present',
-			description: 'Clavmen inspires creativity and makes learning piano fun. The sleek.'
-		},
-		{
-			company: 'Wolff Olins',
-			role: 'Creative Director',
-			period: '2020 — 2022',
+			company: 'ENO BASSÉ DIAMONDS',
+			role: 'Software Developer',
+			period: 'July 2025 - Present',
 			description:
-				'Led creative direction for global brands, focusing on identity and digital strategy.'
+				'Spearheaded the end-to-end development of an e-commerce platform from initial concept to successful public launch. Optimized site speed and SEO, resulting in a 35% increase in PageSpeed Insights performance scores and a 20% improvement in organic traffic. Reduced custom design inquiries by 25% by integrating a custom 3D product configurator using ThreeJS.'
 		},
 		{
-			company: 'Pentagram',
-			role: 'Art Director',
-			period: '2018 — 2020',
+			company: 'PROJECTSTAKE',
+			role: 'Software Engineer',
+			period: 'May 2023 - June 2025',
 			description:
-				'Collaborated on high-profile design projects, merging artistic vision with branding.'
+				'Developed 3 major Web3 products, leading a cross-functional team from concept to launch. Reduced manual deployment effort by 30% by designing and building a CI/CD pipeline from the ground up to automate application deployment. Improved overall code quality and team best practices by mentoring and onboarding new interns and conducting regular code reviews. Decreased onboarding time for new engineers by 50% by creating a central company documentation hub using Docusaurus.'
 		},
 		{
-			company: 'FutureBrand',
-			role: 'Art Director',
-			period: '2016 — 2018',
-			description: 'Developed brand systems and visual languages for diverse industries.'
+			company: 'FOURTIDE',
+			role: 'Frontend Developer',
+			period: 'May 2023 - Aug 2023',
+			description:
+				'Increased conversion rate by 15% by building a custom Shopify e-commerce site from the ground up and implementing SEO and image optimization best practices.'
 		}
 	];
 
 	const training = [
-		{ title: 'Interaction Design', institution: 'Interaction Design Foundation', period: '2021' },
 		{
-			title: 'Visual Communication',
-			institution: 'University of Fine Arts',
-			period: '2015 — 2019'
+			title: 'OSSU (Computer Science)',
+			institution: 'Open Source Society University',
+			period: '2025 - Present'
 		},
-		{ title: 'Advanced Frontend Development', institution: 'Tech Institute', period: '2020' }
+		{
+			title: 'Software Engineering',
+			institution: 'ALX Africa',
+			period: '2022 - 2023'
+		},
+		{
+			title: 'Computer Software Engineering',
+			institution: 'AltSchool Africa',
+			period: '2022 - 2023'
+		},
+		{
+			title: 'Bachelor of Engineering (Mechanical Engineering)',
+			institution: 'Akwa Ibom State University',
+			period: '2017 - 2023'
+		}
 	];
 </script>
 
