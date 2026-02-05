@@ -48,11 +48,11 @@
 
 		<!-- Tech Grid - Sharp Corners & Boxed Design -->
 		<div
-			class="grid grid-cols-2 border-t border-l border-brand-red sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
+			class="grid grid-cols-2 border-t border-l sm:grid-cols-3 md:grid-cols-4 md:border-brand-red/30 lg:grid-cols-6"
 		>
 			{#each TECH_STACK as tech}
 				<div
-					class="relative flex aspect-square flex-col border-r border-b border-brand-red p-6 md:p-10"
+					class="relative flex aspect-square flex-col border-r border-b p-6 md:border-brand-red/30 md:p-10"
 				>
 					<!-- Tech Name (Top Left) -->
 					<span class="font-francois text-[10px] text-brand-red/70 uppercase md:text-xs"

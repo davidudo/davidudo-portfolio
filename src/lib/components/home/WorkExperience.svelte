@@ -33,7 +33,7 @@
 
 		<!-- Experience List - Boxed design with side borders -->
 		<div
-			class="mx-auto flex flex-col divide-y divide-brand-red/30 border border-brand-red md:max-w-4xl"
+			class="mx-auto flex flex-col divide-y border md:max-w-4xl md:divide-brand-red/30 md:border-brand-red/30"
 		>
 			{#each workExperience as exp}
 				<div class="flex flex-col px-4 py-8 md:px-8">

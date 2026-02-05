@@ -5,6 +5,7 @@
 	import WorkExperience from '$lib/components/home/WorkExperience.svelte';
 	import WhatIDo from '$lib/components/home/WhatIDo.svelte';
 	import TechStack from '$lib/components/home/TechStack.svelte';
+	import Testimonials from '$lib/components/home/Testimonials.svelte';
 	import FAQ from '$lib/components/home/FAQ.svelte';
 	import Profile from '$lib/components/home/Profile.svelte';
 	import Footer from '$lib/components/home/Footer.svelte';
@@ -16,6 +17,7 @@
 <WorkExperience />
 <WhatIDo />
 <TechStack />
+<Testimonials />
 <FAQ />
 <Profile />
 <Footer />

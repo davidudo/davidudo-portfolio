@@ -46,10 +46,10 @@
 
 		<!-- Services Grid -->
 		<div
-			class="grid grid-cols-1 gap-x-8 gap-y-0 border-t border-brand-red md:grid-cols-2 lg:grid-cols-3"
+			class="grid grid-cols-1 gap-x-8 gap-y-0 border-t md:grid-cols-2 md:border-brand-red/30 lg:grid-cols-3"
 		>
 			{#each SERVICES as service}
-				<div class="group flex flex-col gap-4 border-b border-brand-red pt-8 pb-8">
+				<div class="group flex flex-col gap-4 border-b pt-8 pb-8 md:border-brand-red/30">
 					<h3 class="font-instrument-serif text-xl md:text-2xl">
 						{service.title}
 					</h3>
