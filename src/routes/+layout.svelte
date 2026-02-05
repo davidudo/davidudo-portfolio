@@ -4,6 +4,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Lenis from 'lenis';
 	import Header from '$lib/components/general/Header.svelte';
+	import PageTransition from '$lib/components/general/PageTransition.svelte';
 
 	let { children } = $props();
 
@@ -34,3 +35,4 @@
 
 <Header />
 {@render children?.()}
+<PageTransition />

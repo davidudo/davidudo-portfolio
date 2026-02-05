@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { skipPageTransition } from '$lib/stores/transition';
 
 	let isMenuOpen = $state(false);
 
@@ -17,6 +18,11 @@
 		isMenuOpen = !isMenuOpen;
 	}
 
+	function handleMenuNavigation() {
+		isMenuOpen = false;
+		skipPageTransition.set(true);
+	}
+
 	let isContactPage = $derived($page.url.pathname === '/contact');
 </script>
 
@@ -32,7 +38,7 @@
 				<a
 					href="/{item.toLowerCase()}"
 					class="group relative font-instrument-serif text-[8vw] leading-[1.1] text-white"
-					onclick={() => (isMenuOpen = false)}
+					onclick={handleMenuNavigation}
 				>
 					{item}
 					<span
