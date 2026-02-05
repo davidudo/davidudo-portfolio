@@ -2,7 +2,7 @@
 	<title>404 | Page Not Found</title>
 </svelte:head>
 
-<main class="flex min-h-svh w-full flex-col items-center justify-center bg-brand-pink px-4 py-20">
+<main class="flex min-h-dvh w-full flex-col items-center justify-center bg-brand-pink px-4 py-20">
 	<!-- Large 404 Typography -->
 	<h1
 		class="flex flex-col items-center font-anton text-[20vw] leading-none font-bold text-brand-red uppercase"

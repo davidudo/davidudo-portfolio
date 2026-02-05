@@ -5,6 +5,7 @@
 	let innerHeight = $state(0);
 	let progress = $derived(Math.min(scrollY / (innerHeight || 1), 1));
 	let translateAmount = $derived(progress * 50);
+	let imgScale = $derived(1 + (scrollY / (innerHeight * 2 || 1)) * 0.05);
 
 	const SOCIAL_LINKS = [
 		{ name: 'GITHUB', url: 'https://github.com/davidudo' },
@@ -15,10 +16,15 @@
 
 <svelte:window bind:scrollY bind:innerHeight />
 
-<div class="relative h-[200vh]">
-	<div class="sticky top-0 h-svh overflow-hidden">
+<div class="relative h-[300vh]">
+	<div class="sticky top-0 h-dvh overflow-hidden">
 		<div class="absolute inset-0 z-0">
-			<img src={heroReveal} alt="Reveal" class="h-full w-full object-cover" />
+			<img
+				src={heroReveal}
+				alt="Reveal"
+				class="h-full w-full object-cover transition-transform duration-100 ease-out"
+				style="transform: scale({imgScale});"
+			/>
 		</div>
 
 		<!-- Top Half -->
