@@ -50,10 +50,12 @@
 		>
 			{#each SERVICES as service}
 				<div class="group flex flex-col gap-4 border-b border-brand-red pt-8 pb-8">
-					<h3 class="font-instrument-serif text-2xl md:text-3xl">
+					<h3 class="font-instrument-serif text-xl md:text-2xl">
 						{service.title}
 					</h3>
-					<p class="max-w-md font-instrument text-sm leading-relaxed text-brand-red md:text-base">
+					<p
+						class="max-w-md font-instrument text-sm leading-relaxed font-medium text-brand-red md:text-base"
+					>
 						{service.description}
 					</p>
 				</div>

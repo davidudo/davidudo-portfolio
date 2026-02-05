@@ -31,7 +31,7 @@
 	}
 </script>
 
-<section class="w-full bg-brand-pink px-4 text-brand-red md:px-8">
+<section class="w-full bg-brand-pink px-4 pb-20 text-brand-red md:px-8 md:pb-32">
 	<div class="mx-auto max-w-[1800px]">
 		<!-- Centered Header from Image -->
 		<div class="mb-10 flex flex-col items-center justify-center text-center md:mb-16">
@@ -40,10 +40,12 @@
 			</h2>
 		</div>
 
-		<!-- FAQ List Reverted to previous design/width -->
-		<div class="mx-auto flex flex-col divide-y divide-brand-red/30 md:max-w-4xl">
+		<!-- FAQ List - Boxed design with side borders -->
+		<div
+			class="mx-auto flex flex-col divide-y divide-brand-red/30 border border-brand-red md:max-w-4xl"
+		>
 			{#each FAQS as faq, i}
-				<div class="flex flex-col py-3 first:pt-0 last:pb-0 md:py-6">
+				<div class="flex flex-col px-4 py-3 md:px-8 md:py-6">
 					<button
 						onclick={() => toggle(i)}
 						class="flex w-full cursor-pointer items-center justify-between py-2 text-left"
@@ -62,7 +64,7 @@
 					{#if activeIndex === i}
 						<div
 							transition:slide
-							class="mt-4 max-w-2xl font-instrument text-sm leading-relaxed md:text-base"
+							class="mt-4 max-w-2xl font-instrument text-sm leading-relaxed font-medium md:text-base"
 						>
 							<p>{faq.answer}</p>
 						</div>

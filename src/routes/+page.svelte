@@ -3,6 +3,7 @@
 	import About from '$lib/components/home/About.svelte';
 	import SelectedWorks from '$lib/components/home/SelectedWorks.svelte';
 	import WhatIDo from '$lib/components/home/WhatIDo.svelte';
+	import TechStack from '$lib/components/home/TechStack.svelte';
 	import FAQ from '$lib/components/home/FAQ.svelte';
 	import Profile from '$lib/components/home/Profile.svelte';
 	import Footer from '$lib/components/home/Footer.svelte';
@@ -12,6 +13,7 @@
 <About />
 <SelectedWorks />
 <WhatIDo />
+<TechStack />
 <FAQ />
 <Profile />
 <Footer />
