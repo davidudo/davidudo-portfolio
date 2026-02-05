@@ -6,7 +6,7 @@
 	<meta name="description" content="Get in touch with David Udo for collaboration opportunities" />
 </svelte:head>
 
-<div class="relative min-h-dvh overflow-hidden bg-[#1a0f4d] p-8 max-sm:p-4">
+<div class="relative min-h-lvh overflow-hidden bg-[#1a0f4d] p-8 max-sm:p-4">
 	<div
 		class="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-16 pt-[8vh] max-lg:gap-16 max-lg:pt-[10vh] max-sm:gap-0 max-sm:pt-[15vh] lg:grid-cols-2"
 		style="height: calc(100vh - 4rem);"

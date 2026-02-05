@@ -4,8 +4,8 @@
 
 <svelte:window bind:scrollY />
 
-<section class="w-full overflow-hidden bg-brand-pink text-brand-red md:h-dvh">
-	<div class="relative flex h-dvh w-full flex-col justify-between px-4 pt-32 pb-16 md:px-8">
+<section class="w-full overflow-hidden bg-brand-pink text-brand-red md:h-svh">
+	<div class="relative flex h-svh w-full flex-col justify-between px-4 pt-32 pb-16 md:px-8">
 		<!-- Title and Description -->
 		<div class="flex w-full flex-col gap-4">
 			<div class="font-francois text-xs font-medium uppercase">ABOUT DAVID UDO</div>

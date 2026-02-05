@@ -21,7 +21,7 @@
 </svelte:head>
 
 {#if project}
-	<main class="min-h-dvh">
+	<main class="min-h-svh">
 		<WorkDetailHero {project} />
 		<WorkDetailContent {project} />
 		<NextProjects currentSlug={project.slug} />

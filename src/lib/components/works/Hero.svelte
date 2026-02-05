@@ -2,7 +2,7 @@
 </script>
 
 <section
-	class="flex min-h-[60vh] w-full flex-col items-center justify-center px-4 py-20 lg:h-dvh lg:py-0"
+	class="flex min-h-[60vh] w-full flex-col items-center justify-center px-4 py-20 lg:h-svh lg:py-0"
 >
 	<!-- Main Title -->
 	<div class="relative flex flex-col items-center text-center select-none">

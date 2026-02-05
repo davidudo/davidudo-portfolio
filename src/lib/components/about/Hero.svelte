@@ -25,7 +25,7 @@
 	});
 </script>
 
-<section class="relative h-[550px] w-full overflow-x-clip bg-brand-pink text-brand-red md:h-dvh">
+<section class="relative h-[550px] w-full overflow-x-clip bg-brand-pink text-brand-red md:h-svh">
 	<!-- Main Hero Content -->
 	<div class="relative flex h-full w-full flex-col items-center justify-center md:pt-20">
 		<!-- Background Typography -->
