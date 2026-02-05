@@ -6,7 +6,7 @@
 </script>
 
 <section class="bg-brand-pink px-4 pt-20 text-brand-red md:px-8 md:pt-32">
-	<div class="mx-auto max-w-[1800px]">
+	<div class="mx-auto">
 		<!-- Header -->
 		<div class="mb-12 flex w-full max-w-md flex-col gap-4 md:mb-16">
 			<h2 class="font-francois text-xs font-medium uppercase">SELECTED WORKS</h2>

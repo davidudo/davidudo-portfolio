@@ -40,7 +40,7 @@
 </script>
 
 <section class="w-full bg-brand-pink px-4 pb-20 text-brand-red md:px-8 md:pb-32">
-	<div class="mx-auto max-w-[1800px]">
+	<div class="mx-auto">
 		<!-- Header -->
 		<div class="mb-10 flex flex-col items-center justify-center text-center md:mb-16">
 			<h2 class="font-anton text-4xl leading-tight uppercase md:text-5xl">MY TECH STACK</h2>
@@ -55,7 +55,7 @@
 					class="relative flex aspect-square flex-col border-r border-b p-6 md:border-brand-red/30 md:p-10"
 				>
 					<!-- Tech Name (Top Left) -->
-					<span class="font-francois text-[10px] text-brand-red/70 uppercase md:text-xs"
+					<span class="font-francois text-[10px] text-brand-red uppercase md:text-xs"
 						>{tech.name}</span
 					>
 

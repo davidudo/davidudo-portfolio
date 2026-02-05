@@ -41,13 +41,13 @@
 						<h3 class="font-instrument-serif md:text-xl">
 							{exp.company}
 						</h3>
-						<span class="font-francois text-xs uppercase opacity-70">
+						<span class="font-francois text-xs uppercase">
 							{exp.period}
 						</span>
 					</div>
 					<div class="mb-4">
 						<span
-							class="font-francois text-xs font-medium tracking-widest text-brand-red/80 uppercase"
+							class="font-francois text-xs font-medium tracking-widest text-brand-red uppercase"
 						>
 							{exp.role}
 						</span>

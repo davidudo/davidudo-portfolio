@@ -8,7 +8,7 @@
 </script>
 
 <section class="bg-brand-pink px-4 pt-4 pb-10 md:px-8">
-	<div class="mx-auto max-w-[1800px]">
+	<div class="mx-auto">
 		<h2
 			class="mb-10 text-center font-francois text-2xl font-medium text-brand-red uppercase md:mb-18 md:text-3xl"
 		>

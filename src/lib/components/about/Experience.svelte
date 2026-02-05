@@ -1,10 +1,25 @@
 <script>
 	const skills = [
-		'Languages: JavaScript, TypeScript, Python, Elixir, Clojure, Dart, Go, SQL, NoSQL',
-		'Frontend: React, Vue, Svelte, Next.js, Nuxt.js, Phoenix, HTML5, CSS3, Flutter, React Native',
-		'Backend: Node.js, NestJS, Express.js, Django, Phoenix, Gin',
-		'Databases & Cloud: PostgreSQL, MySQL, MongoDB, AWS, GCP, Azure, Docker, Kubernetes',
-		'Tools & DevOps: Git, GitHub Actions, CI/CD, Figma, WordPress, Shopify, Webflow'
+		{
+			category: 'Languages',
+			skillSets: 'JavaScript, TypeScript, Python, Elixir, Clojure, Dart, Go, SQL, NoSQL'
+		},
+		{
+			category: 'Frontend',
+			skillSets: 'React, Vue, Svelte, Next.js, Nuxt.js, Phoenix, HTML5, CSS3, Flutter, React Native'
+		},
+		{
+			category: 'Backend',
+			skillSets: 'Node.js, NestJS, Express.js, Django, Phoenix, Gin'
+		},
+		{
+			category: 'Databases & Cloud',
+			skillSets: 'PostgreSQL, MySQL, MongoDB, AWS, GCP, Azure, Docker, Kubernetes'
+		},
+		{
+			category: 'Tools & DevOps',
+			skillSets: 'Git, GitHub Actions, CI/CD, Figma, WordPress, Shopify, Webflow'
+		}
 	];
 
 	const workExperience = [
@@ -64,8 +79,9 @@
 			</div>
 			<div class="flex flex-col divide-y divide-white/30 font-medium md:w-3/4">
 				{#each skills as skill}
-					<div class="py-4 first:pt-0 last:pb-0">
-						<span class="text-sm md:text-lg">{skill}</span>
+					<div class="flex flex-col gap-2 py-4 text-sm font-medium first:pt-0 last:pb-0 md:text-lg">
+						<span class="font-instrument-serif tracking-wide">{skill.category}</span>
+						<span>{skill.skillSets}</span>
 					</div>
 				{/each}
 			</div>
