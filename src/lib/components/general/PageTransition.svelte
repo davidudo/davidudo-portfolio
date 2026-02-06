@@ -13,7 +13,7 @@
 		if (to && to.url && !isTransitioning) {
 			// Check if we should skip this transition (e.g., from menu navigation)
 			if (get(skipPageTransition)) {
-				skipPageTransition.set(false); // Reset for next navigation
+				skipPageTransition.set(false);
 				return;
 			}
 
@@ -35,7 +35,7 @@
 			// Trigger the leaving animation to reveal the new page
 			setTimeout(() => {
 				phase = 'leaving';
-			}, 300); // Small delay to ensure the new content is painted
+			}, 300);
 		}
 	});
 
@@ -61,9 +61,23 @@
 		class:entering={phase === 'entering'}
 		class:holding={phase === 'holding'}
 		class:leaving={phase === 'leaving'}
-		onanimationend={handleAnimationEnd}
 	>
-		<span class="page-transition-name">David Udo</span>
+		<div class="bars-container">
+			{#each Array(5) as _, i}
+				<div
+					class="bar"
+					style="--index: {i};"
+					onanimationend={i === 4 ? handleAnimationEnd : null}
+				></div>
+			{/each}
+		</div>
+		<span
+			class="page-transition-name"
+			class:visible={phase === 'entering' || phase === 'holding'}
+			class:loading={phase === 'holding'}
+		>
+			David Udo
+		</span>
 	</div>
 {/if}
 
@@ -74,11 +88,24 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: var(--color-brand-red);
 		z-index: 9999;
 		pointer-events: none;
 		overflow: hidden;
-		transform: translateY(100%); /* Hidden at bottom by default */
+	}
+
+	.bars-container {
+		position: absolute;
+		inset: 0;
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	.bar {
+		flex: 1;
+		height: 100%;
+		background-color: var(--color-brand-red);
+		transform: translateY(100%);
 	}
 
 	.page-transition-name {
@@ -89,30 +116,53 @@
 		font-size: 1.5rem;
 		color: white;
 		pointer-events: none;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		z-index: 10;
+	}
+
+	.page-transition-name.visible {
+		opacity: 1;
+	}
+
+	.page-transition-name.loading {
+		animation: pulse 1.5s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.5;
+		}
 	}
 
 	@media (min-width: 768px) {
 		.page-transition-name {
 			bottom: 4rem;
 			right: 4rem;
-			font-size: 2rem;
+			font-size: 2.5rem;
 		}
 	}
 
-	.entering {
-		animation: enterFromBottom 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+	.entering .bar {
+		animation: barEnter 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+		animation-delay: calc(var(--index) * 0.05s);
 	}
 
-	.holding {
+	.holding .bar {
 		transform: translateY(0);
 	}
 
-	.leaving {
-		animation: exitToBottom 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+	.leaving .bar {
+		animation: barExit 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+		animation-delay: calc(var(--index) * 0.05s);
+		animation-fill-mode: both;
 	}
 
-	/* Enter: Rise from bottom to cover screen (current page) */
-	@keyframes enterFromBottom {
+	@keyframes barEnter {
 		from {
 			transform: translateY(100%);
 		}
@@ -121,8 +171,7 @@
 		}
 	}
 
-	/* Exit: Slide down to reveal new content (new page) */
-	@keyframes exitToBottom {
+	@keyframes barExit {
 		from {
 			transform: translateY(0);
 		}
