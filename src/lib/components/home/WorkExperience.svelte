@@ -38,7 +38,7 @@
 			{#each workExperience as exp}
 				<div class="flex flex-col px-4 py-8 md:px-8">
 					<div class="mb-4 flex flex-col justify-between gap-2 md:flex-row md:items-baseline">
-						<h3 class="font-instrument-serif md:text-xl">
+						<h3 class="font-instrument-serif font-semibold md:text-xl">
 							{exp.company}
 						</h3>
 						<span class="font-francois text-xs uppercase">

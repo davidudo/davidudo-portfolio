@@ -80,7 +80,7 @@
 			<div class="flex flex-col divide-y divide-white/30 font-medium md:w-3/4">
 				{#each skills as skill}
 					<div class="flex flex-col gap-2 py-4 text-sm font-medium first:pt-0 last:pb-0 md:text-lg">
-						<span class="font-instrument-serif tracking-wide">{skill.category}</span>
+						<span class="font-instrument-serif font-semibold tracking-wide">{skill.category}</span>
 						<span>{skill.skillSets}</span>
 					</div>
 				{/each}
