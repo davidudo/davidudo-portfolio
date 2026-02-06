@@ -4,7 +4,7 @@
 
 	let isMenuOpen = $state(false);
 
-	const MENU_ITEMS = ['ABOUT', 'WORKS', 'CONTACT'];
+	const MENU_ITEMS = ['ABOUT', 'WORKS', 'PLAYGROUND', 'CONTACT'];
 
 	const SOCIAL_LINKS = [
 		{ name: 'GITHUB', url: 'https://github.com/davidudo' },
@@ -37,7 +37,7 @@
 			{#each MENU_ITEMS as item}
 				<a
 					href="/{item.toLowerCase()}"
-					class="group relative font-instrument-serif text-[8vw] leading-[1.1] text-white"
+					class="group relative font-instrument-serif text-[8vw] leading-[1.1] text-white md:text-[5vw]"
 					onclick={handleMenuNavigation}
 				>
 					{item}
