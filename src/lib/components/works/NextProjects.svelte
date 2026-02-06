@@ -20,7 +20,7 @@
 				<ProjectCard
 					title={project.title}
 					slug={project.slug}
-					tags={project.tags.join(' • ')}
+					tags={project.tags.join(' , ')}
 					image={project.image}
 					hoverImage={project.hoverImage}
 				/>

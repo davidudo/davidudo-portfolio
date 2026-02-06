@@ -14,9 +14,11 @@ export interface Project {
 	description: string;
 	tags: string[];
 	year: string;
+	industry: string;
 	image: string;
 	hoverImage?: string;
 	link?: string;
+	client?: string;
 	sections?: {
 		items: { title: string; content: string }[];
 		images?: string[];
@@ -32,6 +34,8 @@ export const PROJECTS: Project[] = [
 			'A full-stack platform for developers to share projects, connect, and receive feedback, featuring real-time messaging and project rating.',
 		tags: ['Django', 'Python', 'PostgreSQL', 'REST API'],
 		year: '2022',
+		industry: 'Software Development',
+		client: 'Personal Project',
 		image: project01a,
 		hoverImage: project01b,
 		link: 'https://github.com/davidudo',
@@ -61,6 +65,8 @@ export const PROJECTS: Project[] = [
 			'An interactive platform enabling users to create and participate in topic-specific discussion rooms for collaborative learning.',
 		tags: ['Django', 'Python', 'CRUD', 'Auth'],
 		year: '2022',
+		industry: 'EdTech',
+		client: 'Personal Project',
 		image: project02a,
 		hoverImage: project02b,
 		link: 'https://github.com/davidudo',
@@ -85,6 +91,8 @@ export const PROJECTS: Project[] = [
 			'Architected and built a comprehensive job board with custom authentication and full CRUD operations for job listings.',
 		tags: ['Node.js', 'Express', 'React', 'MongoDB'],
 		year: '2022',
+		industry: 'HR Tech',
+		client: 'Personal Project',
 		image: project03a,
 		hoverImage: project03b,
 		link: 'https://github.com/davidudo',
@@ -109,6 +117,8 @@ export const PROJECTS: Project[] = [
 			'A software and hardware prototype enabling real-time control and monitoring of an autonomous delivery robot.',
 		tags: ['C', 'Blender', 'SolidWorks', 'Web Interface'],
 		year: '2023',
+		industry: 'Robotics',
+		client: 'University Project',
 		image: project04a,
 		hoverImage: project04b,
 		link: 'https://github.com/davidudo',

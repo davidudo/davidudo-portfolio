@@ -5,7 +5,7 @@
 </script>
 
 <section class="bg-brand-pink px-4 pb-4 md:px-8">
-	<div class="mx-auto max-w-[1800px]">
+	<div class="mx-auto">
 		{#if project.sections}
 			<div class="flex flex-col">
 				{#each project.sections as section}
@@ -38,11 +38,17 @@
 						</div>
 
 						{#if section.images && section.images.length > 0}
-							{#each section.images as img}
-								<div class="relative mb-8 aspect-video w-full overflow-hidden bg-gray-100 md:mb-12">
-									<img src={img} alt="{project.title} section" class="h-full w-full object-cover" />
-								</div>
-							{/each}
+							<div class="mb-12 grid grid-cols-1 gap-4 md:grid-cols-2">
+								{#each Array(4) as _, i}
+									<div class="aspect-4/3 overflow-hidden bg-gray-100">
+										<img
+											src={section.images[i % section.images.length]}
+											alt="{project.title} section"
+											class="h-full w-full object-cover"
+										/>
+									</div>
+								{/each}
+							</div>
 						{/if}
 					</div>
 				{/each}
