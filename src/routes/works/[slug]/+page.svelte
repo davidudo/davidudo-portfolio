@@ -3,6 +3,7 @@
 	import { PROJECTS } from '$lib/data/works';
 	import WorkDetailHero from '$lib/components/works/WorkDetailHero.svelte';
 	import WorkDetailContent from '$lib/components/works/WorkDetailContent.svelte';
+	import ProjectMetrics from '$lib/components/works/ProjectMetrics.svelte';
 	import NextProjects from '$lib/components/works/NextProjects.svelte';
 	import Footer from '$lib/components/general/Footer.svelte';
 	import { error } from '@sveltejs/kit';
@@ -24,6 +25,7 @@
 	<main class="min-h-dvh">
 		<WorkDetailHero {project} />
 		<WorkDetailContent {project} />
+		<ProjectMetrics {project} />
 		<NextProjects currentSlug={project.slug} />
 		<Footer />
 	</main>

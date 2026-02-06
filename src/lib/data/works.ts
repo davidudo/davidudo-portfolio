@@ -23,6 +23,16 @@ export interface Project {
 		items: { title: string; content: string }[];
 		images?: string[];
 	}[];
+	metrics?: {
+		value: string;
+		label: string;
+	}[];
+	testimonial?: {
+		quote: string;
+		name: string;
+		role: string;
+		avatar?: string;
+	};
 }
 
 export const PROJECTS: Project[] = [
@@ -55,7 +65,19 @@ export const PROJECTS: Project[] = [
 				],
 				images: [project01a, project01b]
 			}
-		]
+		],
+		metrics: [
+			{ value: '35%', label: 'Increase in completed sign-ups' },
+			{ value: '22%', label: 'Boost in daily active users' },
+			{ value: '3x', label: 'Faster mobile navigation' },
+			{ value: '85%', label: 'User satisfaction rate' }
+		],
+		testimonial: {
+			quote:
+				'They made crypto feel approachable. The design is stunning and the UX feels effortless.',
+			name: 'Jared Lin',
+			role: 'Product Manager'
+		}
 	},
 	{
 		slug: 'study-buddy',
