@@ -62,7 +62,7 @@
 					<!-- Icon (Center) - Using Iconify for sharp/clean look -->
 					<div class="flex flex-1 items-center justify-center">
 						<img
-							src="https://api.iconify.design/{tech.icon}.svg"
+							src="/images/tech-stack/{tech.icon.replace(':', '-')}.svg"
 							alt={tech.name}
 							class="h-10 w-10 md:h-14 md:w-14"
 						/>
