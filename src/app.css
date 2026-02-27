@@ -1,15 +1,285 @@
 @import 'tailwindcss';
 
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@import 'lenis/dist/lenis.css';
+
 @font-face {
 	font-family: 'Amsterdam Two';
-	src: url('$lib/assets/fonts/amsterdam-two.woff2') format('woff2');
+	src: url('$lib/assets/fonts/amsterdam-two/amsterdam-two.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
-@import 'lenis/dist/lenis.css';
+
+@font-face {
+	font-family: 'Anton';
+	src: url('$lib/assets/fonts/anton/anton-regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Francois One';
+	src: url('$lib/assets/fonts/francois-one/francois-one-regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Instrument Serif */
+@font-face {
+	font-family: 'Instrument Serif';
+	src: url('$lib/assets/fonts/instrument-serif/instrument-serif-regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Serif';
+	src: url('$lib/assets/fonts/instrument-serif/instrument-serif-italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Instrument Sans - Normal */
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-medium-italic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-bold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-bold-italic.ttf')
+		format('truetype');
+	font-weight: 600;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-bold-italic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+/* Instrument Sans - Condensed */
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-condensed-regular.ttf')
+		format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-condensed-italic.ttf')
+		format('truetype');
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-condensed-medium.ttf')
+		format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-condensed-medium-italic.ttf')
+		format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-condensed-semi-bold.ttf')
+		format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-condensed-semi-bold-italic.ttf')
+		format('truetype');
+	font-weight: 600;
+	font-style: italic;
+	font-stretch: condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-condensed-bold.ttf')
+		format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-condensed-bold-italic.ttf')
+		format('truetype');
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: condensed;
+	font-display: swap;
+}
+
+/* Instrument Sans - Semi-Condensed */
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-condensed-regular.ttf')
+		format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: semi-condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-condensed-italic.ttf')
+		format('truetype');
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: semi-condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-condensed-medium.ttf')
+		format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: semi-condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-condensed-medium-italic.ttf')
+		format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: semi-condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-condensed-semi-bold.ttf')
+		format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: semi-condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-condensed-semi-bold-italic.ttf')
+		format('truetype');
+	font-weight: 600;
+	font-style: italic;
+	font-stretch: semi-condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-condensed-bold.ttf')
+		format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: semi-condensed;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Instrument Sans';
+	src: url('$lib/assets/fonts/instrument-sans/instrument-sans-semi-condensed-bold-italic.ttf')
+		format('truetype');
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: semi-condensed;
+	font-display: swap;
+}
 
 @theme {
 	--font-anton: 'Anton', sans-serif;
