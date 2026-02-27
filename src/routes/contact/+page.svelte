@@ -4,6 +4,26 @@
 <svelte:head>
 	<title>Contact - David Udo</title>
 	<meta name="description" content="Get in touch with David Udo for collaboration opportunities" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://davidudo.dev/contact" />
+	<meta property="og:title" content="Contact - David Udo" />
+	<meta
+		property="og:description"
+		content="Get in touch with David Udo for collaboration opportunities."
+	/>
+	<meta property="og:image" content="/davidudo.jpg" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://davidudo.dev/contact" />
+	<meta property="twitter:title" content="Contact - David Udo" />
+	<meta
+		property="twitter:description"
+		content="Get in touch with David Udo for collaboration opportunities."
+	/>
+	<meta property="twitter:image" content="/davidudo.jpg" />
 </svelte:head>
 
 <div class="relative min-h-dvh overflow-hidden bg-[#1a0f4d] p-8 max-sm:p-4">

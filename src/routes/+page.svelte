@@ -11,6 +11,38 @@
 	import Footer from '$lib/components/home/Footer.svelte';
 </script>
 
+<svelte:head>
+	<title>David Udo - Software Engineer</title>
+	<meta
+		name="description"
+		content="David Udo is a Software Engineer with 4+ years of experience architecting and delivering robust solutions for web, mobile, and desktop."
+	/>
+	<meta
+		name="keywords"
+		content="David Udo, Software Engineer, Full Stack Developer, Svelte, TypeScript, Flutter, Python"
+	/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://davidudo.dev/" />
+	<meta property="og:title" content="David Udo - Software Engineer" />
+	<meta
+		property="og:description"
+		content="Software Engineer architecting and delivering robust solutions across web, mobile, and desktop."
+	/>
+	<meta property="og:image" content="/davidudo.jpg" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://davidudo.dev/" />
+	<meta property="twitter:title" content="David Udo - Software Engineer" />
+	<meta
+		property="twitter:description"
+		content="Software Engineer architecting and delivering robust solutions across web, mobile, and desktop."
+	/>
+	<meta property="twitter:image" content="/davidudo.jpg" />
+</svelte:head>
+
 <Hero />
 <About />
 <SelectedWorks />
