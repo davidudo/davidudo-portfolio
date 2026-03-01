@@ -47,13 +47,42 @@
 				</span>
 			</div>
 
-			<!-- Category -->
-			<div class="flex items-center justify-between border-b border-brand-red/30 py-4">
-				<span class="font-francois text-xs font-medium tracking-wide uppercase">Category</span>
-				<span class="font-instrument text-xs font-semibold uppercase">
-					{project.tags[0] || 'Development'}
-				</span>
-			</div>
+			<!-- Github Link -->
+			{#if project.github}
+				<div class="flex items-center justify-between border-b border-brand-red/30 py-4">
+					<span class="font-francois text-xs font-medium tracking-wide uppercase">Github</span>
+					<a
+						href={project.github}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group flex items-center gap-1 font-instrument text-xs font-semibold uppercase"
+					>
+						<div class="relative flex h-3.5 flex-col overflow-hidden">
+							<span class="transition-transform duration-300 group-hover:-translate-y-full"
+								>VIEW CODE</span
+							>
+							<span
+								class="absolute top-full left-0 w-full transition-transform duration-300 group-hover:-translate-y-full"
+								>VIEW CODE</span
+							>
+						</div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="h-4 w-4"
+						>
+							<path
+								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+							></path>
+						</svg>
+					</a>
+				</div>
+			{/if}
 
 			<!-- Live Project Link -->
 			{#if project.link}
@@ -68,11 +97,11 @@
 					>
 						<div class="relative flex h-3.5 flex-col overflow-hidden">
 							<span class="transition-transform duration-300 group-hover:-translate-y-full"
-								>LIVE PREVIEW</span
+								>VIEW NOW</span
 							>
 							<span
 								class="absolute top-full left-0 w-full transition-transform duration-300 group-hover:-translate-y-full"
-								>LIVE PREVIEW</span
+								>VIEW NOW</span
 							>
 						</div>
 						<svg
@@ -94,12 +123,17 @@
 		</div>
 	</div>
 
-	<!-- Image Section (2x2 Grid) -->
+	<!-- Image Section -->
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4">
-		{#each Array(4) as _}
+		{#if project.image}
 			<div class="aspect-4/3 overflow-hidden bg-gray-100">
 				<img src={project.image} alt={project.title} class="h-full w-full object-cover" />
 			</div>
-		{/each}
+		{/if}
+		{#if project.hoverImage && project.hoverImage !== project.image}
+			<div class="aspect-4/3 overflow-hidden bg-gray-100">
+				<img src={project.hoverImage} alt={project.title} class="h-full w-full object-cover" />
+			</div>
+		{/if}
 	</div>
 </section>

@@ -39,10 +39,10 @@
 
 						{#if section.images && section.images.length > 0}
 							<div class="mb-12 grid grid-cols-1 gap-4 md:grid-cols-2">
-								{#each Array(4) as _, i}
+								{#each section.images as image}
 									<div class="aspect-4/3 overflow-hidden bg-gray-100">
 										<img
-											src={section.images[i % section.images.length]}
+											src={image}
 											alt="{project.title} section"
 											class="h-full w-full object-cover"
 										/>
