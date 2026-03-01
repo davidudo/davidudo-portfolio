@@ -1,24 +1,45 @@
 <script lang="ts">
+	import chrisEnedah from '$lib/assets/testimonials/chris-enedah.webp';
+	import enoabasiBob from '$lib/assets/testimonials/enoabasi-bob.webp';
+	import gerardLlanos from '$lib/assets/testimonials/gerard-llanos.jpeg';
+	import nicholayArmando from '$lib/assets/testimonials/nicholay-armando.jpg';
+	import peterNkobowo from '$lib/assets/testimonials/peter-nkobowo.jpeg';
+
 	const testimonials = [
 		{
 			quote:
-				'The designs were modern, intuitive, and perfectly aligned with our brand. One of the best UI/UX experts we’ve hired!',
-			author: 'James P',
-			role: 'Founder',
-			image: '/images/testimonials/james.png'
+				"David's ability to translate complex requirements into elegant, functional code is unmatched. He delivered a product that exceeded our expectations in both performance and aesthetics.",
+			author: 'Chris Enedah',
+			role: 'CEO of Projectstake LLC',
+			image: chrisEnedah
 		},
 		{
 			quote:
-				'Not only is the work visually stunning, but it’s also grounded in real usability. A true professional.',
-			author: 'Ananya Rames',
-			role: 'Tech Lead at CoreUX Labs',
-			image: '/images/testimonials/ananya.png'
+				'Working with David was a seamless experience. His deep technical knowledge and proactive problem-solving skills make him an invaluable asset to any engineering team.',
+			author: 'Enoabasi Bob',
+			role: 'CEO of Eno Bassé Diamonds',
+			image: enoabasiBob
 		},
 		{
-			quote: 'From Figma to functional code — everything was delivered on time.',
-			author: 'David K',
-			role: 'CEO of LaunchFoundry',
-			image: '/images/testimonials/david.png'
+			quote:
+				"David's commitment to quality and attention to detail is evident in every line of code he writes. He consistently provides innovative solutions to difficult architectural challenges.",
+			author: 'Gerard Llanos',
+			role: 'CEO of GNC Labs',
+			image: gerardLlanos
+		},
+		{
+			quote:
+				"David is a brilliantly talented developer who doesn't just build features but thinks about the end-to-end user experience. His work on our frontend significantly improved our site's engagement.",
+			author: 'Nicholay Armando',
+			role: 'CEO of Agoraleads',
+			image: nicholayArmando
+		},
+		{
+			quote:
+				"Highly skilled and dependable. David's expertise in backend systems helped us scale our infrastructure efficiently. A true professional through and through.",
+			author: 'Peter Nkobowo',
+			role: 'CEO of Bot4orge AI',
+			image: peterNkobowo
 		}
 	];
 </script>
