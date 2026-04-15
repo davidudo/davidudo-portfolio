@@ -35,6 +35,26 @@
 		<meta property="twitter:title" content="{project.title} - David Udo" />
 		<meta property="twitter:description" content={project.description} />
 		<meta property="twitter:image" content={project.image} />
+
+		{#if project.slug === 'aide-delivery-robot'}
+			<script type="application/ld+json">
+				{
+					"@context": "https://schema.org",
+					"@type": "SoftwareApplication",
+					"@id": "https://davidudo.dev/works/aide-delivery-robot#project",
+					"url": "https://davidudo.dev/works/aide-delivery-robot",
+					"name": "Aide Robot",
+					"description": "Design and development of a package delivery robot. A software and hardware prototype enabling real-time control and monitoring of an autonomous delivery robot.",
+					"datePublished": "2023",
+					"applicationCategory": "Robotics",
+					"author": {
+						"@id": "https://davidudo.dev/#person"
+					},
+					"codeRepository": "https://github.com/davidudo/aide",
+					"keywords": "C, JavaScript, HTML, Blender, AutoCAD, Fritzing"
+				}
+			</script>
+		{/if}
 	{/if}
 </svelte:head>
 

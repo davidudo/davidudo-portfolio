@@ -1,5 +1,4 @@
-<script lang="ts">
-</script>
+<script lang="ts"></script>
 
 <svelte:head>
 	<title>Contact - David Udo</title>
@@ -24,6 +23,22 @@
 		content="Get in touch with David Udo for collaboration opportunities."
 	/>
 	<meta property="twitter:image" content="/davidudo.jpg" />
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "ContactPage",
+			"@id": "https://davidudo.dev/contact#contactpage",
+			"url": "https://davidudo.dev/contact",
+			"name": "Contact - David Udo",
+			"description": "Get in touch with David Udo for collaboration opportunities.",
+			"mainEntity": {
+				"@id": "https://davidudo.dev/#person"
+			},
+			"isPartOf": {
+				"@id": "https://davidudo.dev/#website"
+			}
+		}
+	</script>
 </svelte:head>
 
 <div class="relative min-h-dvh overflow-hidden bg-[#1a0f4d] p-8 max-sm:p-4">

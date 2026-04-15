@@ -26,48 +26,7 @@
 	let isContactPage = $derived($page.url.pathname === '/contact');
 </script>
 
-<!-- Menu Overlay -->
-<div
-	class="fixed inset-0 z-40 flex flex-col items-center justify-center bg-brand-red transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
-	class:translate-y-0={isMenuOpen}
-	class:-translate-y-full={!isMenuOpen}
->
-	<div class="flex flex-col items-center justify-center gap-[10vh]">
-		<nav class="flex flex-col items-center gap-6 text-center md:gap-2">
-			{#each MENU_ITEMS as item}
-				<a
-					href="/{item.toLowerCase()}"
-					class="group relative font-instrument-serif text-[8vw] leading-[1.1] text-white md:text-[5vw]"
-					onclick={handleMenuNavigation}
-				>
-					{item}
-					<span
-						class="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100"
-					></span>
-				</a>
-			{/each}
-		</nav>
-
-		<!-- Footer Links -->
-		<div
-			class="flex w-full flex-col items-center justify-center gap-6 px-4 font-francois text-xs tracking-widest text-white uppercase md:flex-row md:gap-28 md:px-8"
-		>
-			{#each SOCIAL_LINKS as link}
-				<a href={link.url} class="group relative flex h-3.5 flex-col overflow-hidden">
-					<span class="transition-transform duration-300 group-hover:-translate-y-full"
-						>{link.name}</span
-					>
-					<span
-						class="absolute top-full left-0 w-full transition-transform duration-300 group-hover:-translate-y-full"
-						>{link.name}</span
-					>
-				</a>
-			{/each}
-		</div>
-	</div>
-</div>
-
-<div
+<header
 	class="pointer-events-none fixed top-0 left-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-colors duration-300 md:px-8 md:py-8"
 	class:text-white={isMenuOpen || isContactPage}
 	class:text-brand-red={!isMenuOpen && !isContactPage}
@@ -114,4 +73,45 @@
 			></span>
 		</div>
 	</button>
+</header>
+
+<!-- Menu Overlay -->
+<div
+	class="fixed inset-0 z-40 flex flex-col items-center justify-center bg-brand-red transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
+	class:translate-y-0={isMenuOpen}
+	class:-translate-y-full={!isMenuOpen}
+>
+	<div class="flex flex-col items-center justify-center gap-[10vh]">
+		<nav class="flex flex-col items-center gap-6 text-center md:gap-2">
+			{#each MENU_ITEMS as item}
+				<a
+					href="/{item.toLowerCase()}"
+					class="group relative font-instrument-serif text-[8vw] leading-[1.1] text-white md:text-[5vw]"
+					onclick={handleMenuNavigation}
+				>
+					{item}
+					<span
+						class="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100"
+					></span>
+				</a>
+			{/each}
+		</nav>
+
+		<!-- Footer Links -->
+		<div
+			class="flex w-full flex-col items-center justify-center gap-6 px-4 font-francois text-xs tracking-widest text-white uppercase md:flex-row md:gap-28 md:px-8"
+		>
+			{#each SOCIAL_LINKS as link}
+				<a href={link.url} class="group relative flex h-3.5 flex-col overflow-hidden">
+					<span class="transition-transform duration-300 group-hover:-translate-y-full"
+						>{link.name}</span
+					>
+					<span
+						class="absolute top-full left-0 w-full transition-transform duration-300 group-hover:-translate-y-full"
+						>{link.name}</span
+					>
+				</a>
+			{/each}
+		</div>
+	</div>
 </div>

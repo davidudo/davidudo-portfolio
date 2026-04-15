@@ -30,6 +30,22 @@
 		content="Explore David Udo's playground - a collection of hobbies, interests, and creative inspirations beyond work."
 	/>
 	<meta property="twitter:image" content="/davidudo.jpg" />
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"@id": "https://davidudo.dev/playground#webpage",
+			"url": "https://davidudo.dev/playground",
+			"name": "Playground - David Udo",
+			"description": "Explore David Udo's playground - a collection of hobbies, interests, and creative inspirations beyond work.",
+			"author": {
+				"@id": "https://davidudo.dev/#person"
+			},
+			"isPartOf": {
+				"@id": "https://davidudo.dev/#website"
+			}
+		}
+	</script>
 </svelte:head>
 
 <main class="min-h-screen">

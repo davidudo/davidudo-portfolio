@@ -33,6 +33,23 @@
 		content="Software Engineer architecting and delivering robust solutions across web, mobile, and desktop."
 	/>
 	<meta property="twitter:image" content="/davidudo.jpg" />
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "AboutPage",
+			"@id": "https://davidudo.dev/about#aboutpage",
+			"url": "https://davidudo.dev/about",
+			"name": "About - David Udo",
+			"description": "Learn more about David Udo, a Software Engineer with 4+ years of experience in web, mobile, and desktop development.",
+			"mainEntity": {
+				"@id": "https://davidudo.dev/#person"
+			},
+			"isPartOf": {
+				"@id": "https://davidudo.dev/#website"
+			}
+		}
+	</script>
 </svelte:head>
 
 <Hero />

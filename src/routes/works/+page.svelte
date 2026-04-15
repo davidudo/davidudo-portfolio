@@ -30,6 +30,22 @@
 		content="Explore a selected collection of projects and software solutions architected and delivered by David Udo."
 	/>
 	<meta property="twitter:image" content="/davidudo.jpg" />
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "CollectionPage",
+			"@id": "https://davidudo.dev/works#collectionpage",
+			"url": "https://davidudo.dev/works",
+			"name": "Selected Works - David Udo",
+			"description": "Explore a selected collection of projects and software solutions architected and delivered by David Udo.",
+			"author": {
+				"@id": "https://davidudo.dev/#person"
+			},
+			"isPartOf": {
+				"@id": "https://davidudo.dev/#website"
+			}
+		}
+	</script>
 </svelte:head>
 
 <main class="min-h-dvh w-full bg-brand-pink font-instrument text-brand-red">
